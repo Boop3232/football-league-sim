@@ -1,0 +1,49 @@
+{
+  "collections": {
+    "teams": {
+      "description": "Registered league teams and clubs",
+      "documents": {
+        "{teamId}": {
+          "id": "string",
+          "name": "string",
+          "shortName": "string",
+          "color": "string",
+          "logoEmoji": "string",
+          "attackRating": "number",
+          "defenseRating": "number",
+          "stadium": "string"
+        }
+      }
+    },
+    "fixtures": {
+      "description": "Season fixtures and match results",
+      "documents": {
+        "{fixtureId}": {
+          "id": "string",
+          "matchweek": "number",
+          "homeTeamId": "string",
+          "awayTeamId": "string",
+          "homeScore": "number|null",
+          "awayScore": "number|null",
+          "isCompleted": "boolean",
+          "date": "string"
+        }
+      }
+    },
+    "settings": {
+      "description": "League rules and configuration parameters",
+      "documents": {
+        "league_settings": {
+          "leagueName": "string",
+          "seasonName": "string",
+          "doubleRoundRobin": "boolean",
+          "pointsForWin": "number",
+          "pointsForDraw": "number",
+          "topPositionsCount": "number",
+          "relegationPositionsCount": "number",
+          "isGenerated": "boolean"
+        }
+      }
+    }
+  }
+}

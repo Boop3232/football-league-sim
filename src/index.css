@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+  .mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom scrollbars matching Editorial Dark aesthetic */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #161920;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #3f4451;
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #10b981;
+}

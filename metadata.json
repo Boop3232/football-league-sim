@@ -1,0 +1,6 @@
+{
+  "name": "Football League Simulator",
+  "description": "Simulate custom football leagues with round-robin fixtures, bulk score entry, live auto-calculating standings, and detailed team statistics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
